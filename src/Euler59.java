@@ -41,10 +41,10 @@ public class Euler59 {
         loadDictionary(new File("input\\common_words.txt"));
         int[] inputValues = readEncryptedFile(new File("input\\p059_cipher.txt"), ",");
         if (likelyKeyDecryptMessage(inputValues, 3)
-               /* || bruteForceDecryptMessage(inputValues, 3) */){
+                || bruteForceDecryptMessage(inputValues, 3)){
             printWithWrap(decryptedMessage, 80);
             // Answer for Euler Problem 59
-            System.out.printf("Sum of Ascii Values: %d\n", decryptedValuesCount);
+            System.out.printf("Sum of Ascii Values: %d\n\n", decryptedValuesCount);
         }
 
         // Compare run times for different methods of decryption
