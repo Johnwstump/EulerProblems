@@ -30,6 +30,7 @@ import java.util.TreeSet;
     and the knowledge that the plain text must contain common English words, decrypt the message and find the
     sum of the ASCII values in the original text.
  */
+@SuppressWarnings("Duplicates")
 public class Euler59 {
 
     private static TreeSet<String> dictionary = null;
